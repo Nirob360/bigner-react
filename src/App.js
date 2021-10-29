@@ -1,10 +1,11 @@
 import './App.css';
-import Clock from './components/Clock';
+import ClassList from './components/ClassList';
 
 function App() {
+    const quantities = [1, 2, 3];
     return (
         <div className="App">
-            <Clock />
+            <ClassList quantities={quantities} />
         </div>
     );
 }

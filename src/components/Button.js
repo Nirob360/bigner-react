@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 
 export default class Button extends Component {
@@ -13,12 +12,13 @@ export default class Button extends Component {
     }
 
     render() {
-        console.log('button component render');
         const { Change, locale } = this.props;
         return (
-            <button type="button" onClick={() => Change(locale)}>
-                Click
-            </button>
+            <>
+                <button type="button" onClick={() => Change(locale)}>
+                    {locale === 'bn-BD' ? 'Change Clock' : 'ঘড়ি পরিবর্তন করুন'}
+                </button>
+            </>
         );
     }
 }

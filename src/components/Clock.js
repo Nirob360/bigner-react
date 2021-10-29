@@ -24,16 +24,18 @@ export default class Clock extends Component {
     };
 
     render() {
-        console.log('Clock component');
         const { date, locale } = this.state;
+
         return (
             <div>
                 <h1 className="heading">
                     <span className="text">{date.toLocaleTimeString(locale)}</span>
                 </h1>
-                <Button Change={this.handaleClick} locale="en-US">
-                    Click me
-                </Button>
+                {locale === 'bn-BD' ? (
+                    <Button Change={this.handaleClick} locale="en-US" />
+                ) : (
+                    <Button Change={this.handaleClick} locale="bn-BD" />
+                )}
             </div>
         );
     }
