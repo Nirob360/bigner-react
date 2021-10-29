@@ -1,12 +1,12 @@
-import './App.css';
-import ClassList from './components/ClassList';
+import Forms from './components/from/Forms';
+import GlobalStyle from './GlobalStyle';
 
 function App() {
-    const quantities = [1, 2, 3];
     return (
-        <div className="App">
-            <ClassList quantities={quantities} />
-        </div>
+        <>
+            <GlobalStyle />
+            <Forms />
+        </>
     );
 }
 
