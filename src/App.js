@@ -1,11 +1,11 @@
-import Forms from './components/from/Forms';
+import Calculator from './components/Calculator';
 import GlobalStyle from './GlobalStyle';
 
 function App() {
     return (
         <>
             <GlobalStyle />
-            <Forms />
+            <Calculator />
         </>
     );
 }
