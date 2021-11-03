@@ -1,22 +1,9 @@
-import ClickCounter from './components/ClickCounter';
-import Counter from './components/Counter';
-import HoverCounter from './components/HoverCounter';
+import MyComponents from './components/MyComponents';
 
-function App() {
+export default function App() {
     return (
-        <>
-            <Counter
-                render={(count, incrementCount) => (
-                    <ClickCounter count={count} incrementCount={incrementCount} />
-                )}
-            />
-            <Counter
-                render={(count, incrementCount) => (
-                    <HoverCounter count={count} incrementCount={incrementCount} />
-                )}
-            />
-        </>
+        <div>
+            <MyComponents />
+        </div>
     );
 }
-
-export default App;
